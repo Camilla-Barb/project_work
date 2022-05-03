@@ -149,11 +149,8 @@ li svg{
     width: 100%;
     min-height: 250px;
     padding:50px;
-    margin-top: 328px;
-    
-    
+    margin-top: 500px;
 }
-
 
 #hero h1{
     font-size: 4rem;
@@ -180,24 +177,31 @@ li svg{
 }
 
 /**********************MEDIA-TESTO***********************************/
-.media{
-    background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
 
 .media-testo {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	min-height: 800px;
-	background-color: #fff;
+    grid-template-columns: 1fr;
+    grid-template-rows: 365px auto;
+    min-height: initial;
 }
 
 .testo {
-	padding: 8.412197686645636%;
-	align-self: center;
+    padding: 50px 50px;
 }
+
+
+.media-testo--reverse .media {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.media{
+    /*background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;*/
+    min-height: 576px;
+    margin: 10px 0;
+}
+
 
 .testo h2 {
 	margin: 10px 0 32px;
@@ -217,16 +221,12 @@ li svg{
 	display: inline-block;
 }
 
-/**********************MEDIA-TESTO REVERSE***********************************/
-.media-testo--reverse .media {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-}
 
 
-/**********************MEDIAQUERY***********************************/
 
-@media only screen and (min-width:1023px) {
+/****************************MEDIAQUERY*************************************************/
+/**DISPLAY LARGE PC (Da 1023 IN POI)***/
+@media only screen and (min-width:992px) {
     
 /*******************NAV*****************/
 
@@ -275,5 +275,28 @@ margin: 250px 20px  ;
     letter-spacing: 0.01em;
     }
 
+/******************MEDIA TESTO*****************/
+
+    .media-testo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        background-color: #fff;
+        padding-top: 4%;
+    }
+
+     .media-testo--reverse .media {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+  }
+
+.testo {
+	padding: 8.412197686645636%;
+	align-self: center;
+}
 }
 
+/**DISPLAY SMALL-MEDIUM MOBILE-TABLET (DA 0 A 768) **/
+  /*  @media only screen and (max-width:767px) {
+
+}
