@@ -222,6 +222,46 @@ li svg{
 }
 
 
+/****************************CAROUSEL***********************************/
+
+.carousel{
+    
+    background-color: #F5F5F5;
+    width: 100%;
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.carousel-cell{
+    padding: 20px;
+}
+
+.carousel-cell p{
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    letter-spacing: 00.01em;
+    text-align: center;
+}
+
+.carousel-cell img{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /****************************MEDIAQUERY*************************************************/
