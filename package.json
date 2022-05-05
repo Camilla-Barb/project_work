@@ -1,0 +1,23 @@
+{
+  "name": "project-site-academy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch src/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camilla-Barb/project_work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Camilla-Barb/project_work/issues"
+  },
+  "homepage": "https://github.com/Camilla-Barb/project_work#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
