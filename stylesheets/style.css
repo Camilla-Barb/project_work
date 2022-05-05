@@ -136,7 +136,7 @@ li svg{
 
 /**********************HERO******************************/
 #hero{
-    background: url('../img/strawberries1.webp') no-repeat fixed center / cover;
+    background: url('../assets/img/strawberries1.webp') no-repeat fixed center / cover;
     width: 100%;
     height:800px;
     display: flex;
