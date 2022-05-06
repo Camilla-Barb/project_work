@@ -523,12 +523,12 @@ form input{
 
 .footer_column_list ul{
     width: 224px;
-    font-size: 1.6rem;
-    letter-spacing: 0.01em;
     padding-top: 10%;
 }
 
-.footer_column_list li{
+.footer_column_list li a{
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
     list-style-type: none;
     color: #000;
     line-height: 1.9rem;

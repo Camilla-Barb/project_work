@@ -1,13 +1,59 @@
-html{
+/***************VARIABLES*******************/
+/*color*/
+$white: #fff;
+$black: #000;
+
+/*font-family*/
+$font-family: 'Roboto', sans-serif;
+
+/*font-size*/
+$font-size-p: 1.6rem;
+
+/*font-weight*/
+$bold:bold;
+
+
+/***************MIXIN*******************/
+/*general*/
+@mixin overline{
+    font-size: 1.2rem;
+    line-height: 3rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+}
+
+/*reset css*/
+@mixin reset-html{
     font-size: 10px;
     box-sizing: border-box;
 }
 
-body{
-margin: 0;
-font-family: 'Roboto', sans-serif;
-background-color:#fff;
+@mixin reset-body{
+    margin: 0;
+    font-family: $font-family;
+    background-color: $white;
+}
 
+
+
+
+/*****************FUNCTION*************************/
+
+@function calc-perc ($target, $container){
+    @return ($target/$container) * 100;
+}
+
+
+
+
+
+
+html{
+    @include reset-html;
+}
+
+body{
+    @include reset-body;
 }
 
 *,
@@ -20,10 +66,7 @@ text-decoration: none;
 }
 
 .overline{
-    font-size: 1.2rem;
-    line-height: 3rem;
-    letter-spacing: 0.04rem;
-    text-transform: uppercase;
+    @include overline;
 }
 
 
@@ -41,8 +84,6 @@ p + .btn {
 }
 
 p small{
-    
-    padding: 50px;
     color: gray;
 }
 
@@ -51,7 +92,7 @@ p small{
 
 .banner{
     position: relative;
-    background-color: #000;
+    background-color: $black;
     text-align: center;
     height: 32px;
     display: flex;
@@ -59,8 +100,8 @@ p small{
     align-items: center;
 
     span{
-    color: #fff;
-    font-weight: bold;
+    color: $white;
+    font-weight:$bold;
     font-size: 1.2rem;
     
     }
@@ -74,7 +115,7 @@ p small{
 
     svg{
     width: 20px;
-    color: #fff;
+    color: $white;
     }
 
 
@@ -94,15 +135,13 @@ display: none;
 /**********************HEADER******************************/
 
 .header-menu{
-background-color: #fff;
-/*max-height: 8.25%;*/
+background-color: $white;
 display: flex;
 align-items: center;
 justify-content: space-between;
 }
 
 .logo-container{
-    max-height: 58.31px;
     overflow: hidden;
     align-self: center;
     
@@ -120,7 +159,7 @@ display: inline;
 
 svg{
     
-    color: #000;
+    color: $black;
     margin: 0 0 0 20px;
 }
 }
@@ -132,23 +171,23 @@ display: none;
 
 /**********************HERO******************************/
 #hero{
-    background: url('../assets/img/strawberries1.webp') no-repeat fixed center / cover;
+    background: url('../img/strawberries1.webp') no-repeat fixed center / cover;
     width: 100%;
-    height:800px;
+    height:650px;
     display: flex;
     justify-content: center;
 
 
     h1{
         font-size: 4rem;
-        font-weight: bold;
+        font-weight:$bold;
         line-height: 4.8rem;
     }
 }
 
 .hero-caption{
     text-align: center;
-    background-color: #fff;
+    background-color: $white;
     width: 100%;
     min-height: 250px;
     padding:50px;
@@ -159,7 +198,7 @@ display: none;
         }
 
     a{
-    color: #000;
+    color: $black;
     font-size: 1.4rem;
     line-height: 3rem;
     text-transform: uppercase;
@@ -168,7 +207,7 @@ display: none;
 }
 
 .btn--text {
-    color: #000;
+    color: $black;
     background-color: transparent;
     padding: 0;
 }
@@ -183,7 +222,7 @@ display: none;
 
     p{
 
-        font-size: 1.6rem;
+        font-size: $font-size-p;
         letter-spacing: 0.01rem;
         line-height: 2.4rem;
         margin: 24px 0px;
@@ -211,8 +250,7 @@ display: none;
     /*background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;*/
-    min-height: 576px;
-    margin: 10px 0;
+    min-height: 500px;
 
     grid-column: 1;
     grid-row: 1;
@@ -224,8 +262,8 @@ display: none;
 	font-weight: 700;
 	font-size: 1.4rem;
 	text-transform: uppercase;
-	color: #fff;
-    background-color: #000;
+	color: $white;
+    background-color: $black;
 	text-decoration: none;
 	display: inline-block;
 }
@@ -235,7 +273,6 @@ display: none;
 
 .carousel{
     background-color: #F5F5F5;
-    width: 100%;
     min-height: 200px;
     display: flex;
     justify-content: space-between;    
@@ -253,7 +290,7 @@ display: none;
 
     p{
         padding: 10px;
-        font-size: 1.6rem;
+        font-size: $font-size-p;
         font-weight: 700;
         line-height: 1.9rem;
         letter-spacing: 00.01em;
@@ -289,7 +326,7 @@ form{
 
     input{
         border: 0;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid $black;
         width: 327px;
         padding: 10px;
         margin: auto;
@@ -300,12 +337,12 @@ form{
 
 footer button{
     border: 1px solid #9D9D9D;
-    margin: 50px 0 20px 20px;
+    margin: 50px 0 20px 50px;
     padding: 16px 32px;
 	font-weight: 700;
 	font-size: 1.4rem;
 	text-transform: uppercase;
-	color: #fff;
+	color: $white;
     background-color: #9D9D9D;
 	text-decoration: none;
 	
@@ -318,15 +355,19 @@ footer button{
 
 
 form p small{
-    
     padding: 5px;
     color: gray;
 }
 
 
 .info a{
-    color: black;
+    color: $black;
 }
+
+.info .plus{
+    margin-left: auto;
+}
+
 
 .footer-help{
     margin-top: 50px;
@@ -334,28 +375,36 @@ form p small{
 
 .footer-help, .company{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: $font-size-p;
     line-height: 18.75px;
     font-weight: 700;
     padding: 20px;
     text-align: center;
+    gap: 10px;
     background-color: #F5F5F5;
-   
+
 }
 
 
-.social p{
+
+
+.social{
+
+    p{
     padding: 50px 0 20px 0;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 800;
     text-transform: uppercase;
+    }
+
 
     .icon {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding-bottom: 100px;
         gap: 25px;
     }
@@ -367,13 +416,13 @@ form p small{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #000;
+    background-color: $black;
     height: 110px;
     line-height: 140%;
     text-align: center;
 
     a{
-        color: white;
+        color: $white;
     }
 }
 
@@ -388,6 +437,32 @@ form p small{
 
 
 /****************************MEDIAQUERY*************************************************/
+/*TABLET*/
+@media only screen and (min-width:767px) {
+
+    .media-testo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        background-color: $white;
+        padding-top: 4%;
+    }
+
+    .media-testo--reverse .media {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .media{
+        min-height: 300px;
+    }
+    
+}
+
+
+/***********FORM FOOTER**********/
+
+
 /**DISPLAY LARGE PC (Da 1024 IN POI)***/
 @media only screen and (min-width:1024px) {
 
@@ -402,7 +477,7 @@ nav li{
     }
 
     a{
-    color: #000;
+    color: $black;
     font-size: 1.8rem;
     line-height: 21.09px;
     font-weight: 700;
@@ -436,7 +511,7 @@ display: inline;
     .description{
         display: block;
         font-weight: 400;
-        font-size: 1.6rem;
+        font-size: $font-size-p;
         line-height: 1.9rem;
         align-self: flex-start;
         letter-spacing: 0.01em;
@@ -452,7 +527,7 @@ display: inline;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr;
-        background-color: #fff;
+        background-color: $white;
         padding-top: 4%;
     }
 
@@ -472,7 +547,7 @@ display: inline;
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch;
-    justify-content: space-around;
+    gap: 20px;
     
 }
 
@@ -529,21 +604,22 @@ form{
 
     ul{
     width: 224px;
-    font-size: 1.6rem;
-    letter-spacing: 0.01em;
     padding-top: 10%;
     }
 
-    li{
+    li a{
+    font-size: $font-size-p;
     list-style-type: none;
-    color: #000;
-    line-height: 1.9rem;
+    letter-spacing: 0.01em;
+    color: $black;
+    line-height: 3.5rem;
     padding: 5%;
+    margin-right: 80px;
     }      
 
     span{
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: $font-size-p;
+    font-weight: $bold;
         
     }
 }
@@ -552,7 +628,7 @@ form{
 .copyright{
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
 }
 
 }

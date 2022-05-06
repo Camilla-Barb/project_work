@@ -1,0 +1,42 @@
+.title{
+    background-color: #fff;
+    height: 86px;
+    font-size: 32px;
+    padding-top: 30px;
+}
+
+.hero-card{
+    background-color: #F5F5F5;
+}
+
+.hero-card p{
+    height: 70px;
+    padding-top: 35px;
+    font-weight: 700;
+    color: #6B6B6B;
+}
+
+
+.card-prodotti{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #F5F5F5;
+}
+
+.card img{
+    width: 50%;
+    height: 187px;
+}
+
+.card a{
+    color: #000;
+    height: 350px;
+}
+
+.card button{
+    background-color: #fff;
+    height: 40px;
+    max-width: 171px;
+    border: 0px;
+}
