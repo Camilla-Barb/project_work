@@ -20,18 +20,25 @@
 .card-prodotti{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    justify-items: center;
     background-color: #F5F5F5;
 }
 
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .card img{
-    width: 50%;
     height: 187px;
 }
 
+
 .card a{
+    font-size: 1.4rem;
     color: #000;
-    height: 350px;
 }
 
 .card button{

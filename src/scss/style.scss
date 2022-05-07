@@ -83,9 +83,6 @@ p + .btn {
 	vertical-align: middle;
 }
 
-p small{
-    color: gray;
-}
 
 
 /**********************BANNER*****************************/
@@ -309,15 +306,16 @@ display: none;
 .footer-grid {
 
 .bold-text{
-    padding: 50px;
+    padding: 50px 0 20px 6.25%;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 28.13px;
 }
 
-p {
+.small{
     padding: 20px;
-    color: gray;
+    color: #9D9D9D;
+    margin-right: 19.53%;
 }
 }
 
@@ -334,7 +332,7 @@ form{
     input{
         border: 0;
         border-bottom: 2px solid $black;
-        width: 327px;
+        width: 87.2%;
         padding: 10px;
         margin: auto;
         
@@ -342,9 +340,10 @@ form{
 }
 
 
+
 footer button{
     border: 1px solid #9D9D9D;
-    margin: 50px 200px 20px 0px;
+    margin: 50px 46.875% 20px 0px;
     padding: 16px 32px;
 	font-weight: 700;
 	font-size: 1.4rem;
@@ -390,6 +389,17 @@ footer button{
 
 }
 
+
+.list{
+    background-color: #F5F5F5;
+}
+
+.list li{
+    font-size: 1.4rem;
+    font-weight: 500;
+    height: 30px;
+    padding: 10px;
+}
 
 
 
@@ -460,14 +470,31 @@ footer button{
         min-height: 300px;
     }
     
+
+
+
+/*FORM FOOTER*/
+footer button{
+    margin: 50px 70.404% 10px 10px;
+}
+
+.footer-grid p{
+    margin: 20px 50px 0 40px;
+}
+
+form{
+    margin: 20px 6.518%;
 }
 
 
-/***********FORM FOOTER**********/
+}
+
+
+
 
 
 /**DISPLAY LARGE PC (Da 1024 IN POI)***/
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1023px) {
 
 
     
@@ -546,33 +573,37 @@ display: inline;
 
 
 /**********FOOTER***********/
-.footer-grid{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    gap: 20px;
-    
+
+
+.footer-grid .bold-text{
+    padding: 30px 50px 20px 10px;
 }
+
 
 form{
     text-align: left;
     margin-left: 50px;
-    width: 50%;
-    height: 458px;
+    
 
     label{
     display:inline-block; 
     }
 
     input{
-    margin-left: 50px;
+    width: 317px;
     }
-    
 }
 
-
-.footer-help, .company{
+.info{
     display: none;
+}
+
+.main-footer{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 25% 25%;
+    padding: 20px;
+    
 }
 
 .social {
@@ -590,19 +621,13 @@ form{
 
 
 .footer_column_list{
-    width: 31.25%;
     padding-top: 50px;
     display:flex;
-    gap: 25%;
-
-    .col-1{
-    width:25%;
-    height: 458px;
-    }
+    gap: 10%;
+    margin-left: 80%;
 
     .col-2{
-    width: 25%;
-    height: 458px;
+        padding-right: 0;
     }
 
     ul{
@@ -617,7 +642,6 @@ form{
     color: $black;
     line-height: 3.5rem;
     padding: 5%;
-    margin-right: 80px;
     }      
 
     span{
@@ -627,16 +651,31 @@ form{
     }
 }
 
+footer button{
+    margin: 20px 0 30px 15px;
+}
+
 
 .copyright{
     display: flex;
     flex-direction: row;
     gap: 2%;
+
+    p{
+    color: #fff;
+    }
 }
 
 }
 
+@media only screen and (min-width:1439px){
 
+.footer-grid{
+    margin-left: 15%;
+}
+
+
+}
 
 
 
