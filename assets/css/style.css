@@ -230,12 +230,15 @@ nav li svg {
   display: none;
 }
 
-form .bold-text {
-  width: 87.4666667%;
+.footer-grid .bold-text {
   padding: 50px;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 28.13px;
+}
+.footer-grid p {
+  padding: 20px;
+  color: gray;
 }
 
 form {
@@ -257,7 +260,7 @@ form input {
 
 footer button {
   border: 1px solid #9D9D9D;
-  margin: 50px 0 20px 50px;
+  margin: 50px 200px 20px 0px;
   padding: 16px 32px;
   font-weight: 700;
   font-size: 1.4rem;
@@ -270,15 +273,9 @@ footer button svg {
   margin: 3px 0 0 5px;
 }
 
-form p small {
-  padding: 5px;
-  color: gray;
-}
-
 .info a {
   color: #000;
 }
-
 .info .plus {
   margin-left: auto;
 }

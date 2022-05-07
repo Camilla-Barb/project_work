@@ -306,12 +306,19 @@ display: none;
     display: none;
 }
 
-form .bold-text{
-    width: 87.4666667%;
+.footer-grid {
+
+.bold-text{
     padding: 50px;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 28.13px;
+}
+
+p {
+    padding: 20px;
+    color: gray;
+}
 }
 
 form{
@@ -337,7 +344,7 @@ form{
 
 footer button{
     border: 1px solid #9D9D9D;
-    margin: 50px 0 20px 50px;
+    margin: 50px 200px 20px 0px;
     padding: 16px 32px;
 	font-weight: 700;
 	font-size: 1.4rem;
@@ -354,18 +361,14 @@ footer button{
 
 
 
-form p small{
-    padding: 5px;
-    color: gray;
-}
-
-
-.info a{
+.info {
+    a{
     color: $black;
 }
 
-.info .plus{
+.plus{
     margin-left: auto;
+}
 }
 
 
