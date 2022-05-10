@@ -139,14 +139,15 @@ justify-content: space-between;
 }
 
 .logo-container{
-    overflow: hidden;
-    align-self: center;
+overflow: hidden;
+align-self: center;
     
-    img{
-    max-width: 100%;
-    max-height:58.31px;
+img{
+max-width: 100%;
+max-height:58.31px;
             
-    }
+}
+
 }
 
 /**********************NAV******************************/
@@ -155,9 +156,8 @@ nav li{
 display: inline;
 
 svg{
-    
-    color: $black;
-    margin: 0 0 0 20px;
+color: $black;
+margin: 0 0 0 20px;
 }
 }
 
@@ -176,9 +176,9 @@ display: none;
 
 
     h1{
-        font-size: 4rem;
-        font-weight:$bold;
-        line-height: 4.8rem;
+    font-size: 4rem;
+    font-weight:$bold;
+    line-height: 4.8rem;
     }
 }
 
@@ -449,9 +449,36 @@ footer button{
 
 
 
-/****************************MEDIAQUERY*************************************************/
+/****************************MEDIAQUERIES*************************************************/
 /*TABLET*/
 @media only screen and (min-width:767px) {
+
+
+/*******************NAV*****************/
+
+    nav li {
+
+        svg {
+            display: none;
+        }
+
+        a {
+            color: $black;
+            font-size: 1.8rem;
+            line-height: 21.09px;
+            font-weight: 700;
+            padding: 10px;
+        }
+    }
+
+
+    .home,
+    .listato {
+        display: inline;
+    }
+
+/*MEDIA TESTO + REVERSE*/    
+
 
     .media-testo {
         display: grid;
@@ -469,6 +496,8 @@ footer button{
     .media{
         min-height: 300px;
     }
+
+    
     
 
 
@@ -495,31 +524,6 @@ form{
 
 /**DISPLAY LARGE PC (Da 1024 IN POI)***/
 @media only screen and (min-width:1023px) {
-
-
-    
-/*******************NAV*****************/
-
-nav li{
-
-    svg{
-    display: none;
-    }
-
-    a{
-    color: $black;
-    font-size: 1.8rem;
-    line-height: 21.09px;
-    font-weight: 700;
-    padding: 10px;
-    }    
-}
-
-
-.home , .listato{
-display: inline;
-}
-
 
 
 /*******************HERO***************/

@@ -339,9 +339,27 @@ footer button svg {
   gap: 8px;
 }
 
-/****************************MEDIAQUERY*************************************************/
+/****************************MEDIAQUERIES*************************************************/
 /*TABLET*/
 @media only screen and (min-width: 767px) {
+  /*******************NAV*****************/
+  nav li svg {
+    display: none;
+  }
+  nav li a {
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 21.09px;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .home,
+.listato {
+    display: inline;
+  }
+
+  /*MEDIA TESTO + REVERSE*/
   .media-testo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -374,22 +392,6 @@ footer button svg {
 }
 /**DISPLAY LARGE PC (Da 1024 IN POI)***/
 @media only screen and (min-width: 1023px) {
-  /*******************NAV*****************/
-  nav li svg {
-    display: none;
-  }
-  nav li a {
-    color: #000;
-    font-size: 1.8rem;
-    line-height: 21.09px;
-    font-weight: 700;
-    padding: 10px;
-  }
-
-  .home, .listato {
-    display: inline;
-  }
-
   /*******************HERO***************/
   #hero {
     display: flex;
