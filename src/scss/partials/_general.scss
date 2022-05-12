@@ -1,0 +1,35 @@
+html {
+    @include reset-html;
+}
+
+body {
+    @include reset-body;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.overline {
+    @include overline;
+}
+
+
+
+p+.btn {
+    margin-top: 32px;
+}
+
+
+
+.btn .icon {
+    width: $font-style-l;
+    margin-left: 11px;
+    vertical-align: middle;
+}

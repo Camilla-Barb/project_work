@@ -1,3 +1,9 @@
+/*********GENERAL*************/
+/*.screen-reader-only {
+    display: none;
+}*/
+
+/*************TITLE SECTION HEADER*****************/
 .title{
     background-color: #fff;
     height: 86px;
@@ -9,6 +15,7 @@
     margin-left: 15px;
 }
 
+/*********ICONE E VISUALIZZAZIONE GRIGLIE*************/
 .view-grid{
     background-color: #F5F5F5;
 }
@@ -30,18 +37,13 @@ p.display-xl{
     display: none;
 }
 
-
+/*********CARD PRODOTTI*************/
 .card-prodotti{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 2px;
     background-color: #F5F5F5;
 }
-
-.card-prodotti--gallery{
-    grid-template-columns: repeat(6, 1fr);
-}
-
 
 
 .card{
@@ -56,11 +58,11 @@ p.display-xl{
 
 .img-covercard img{
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
     height: max-content;
+    transform: translate(-50%, -50%);
 }
 
 .icon-on-img p,
@@ -92,7 +94,7 @@ p.display-xl{
 
 
 
-button.wishlist img{
+button.wishlist svg{
     top: 4%;
     right: 1%;
     background-color: transparent;
@@ -153,14 +155,19 @@ button.wishlist img{
 }
 
 
+
 /*********************MEDIAQUERIES*******************************************/
 
 /*tablet*/
 @media only screen and (min-width:767px){
 
+/*title section*/
+
 .title{
     text-align: center;
 }
+
+/*prodotti results*/
 
 p.only-mobile-text{
     display: none;
@@ -169,6 +176,8 @@ p.only-mobile-text{
 p.display-xl {
     display: block;
 }
+
+/*icone visualizzazione griglia prodotti*/
 
 .grid-icon button{
     display: block;
@@ -188,10 +197,23 @@ p.display-xl {
     gap: 75%;
 }
 
+/*icone attive*/
+.grid-icon button.active {
+    color: #000;
+}
+
+.grid-icon button{
+    color: #6B6B6B;
+}
+
+/*icone sulle img*/
+
 .icon-on-img p{
     background-color: transparent;
     border: 0;
 }
+
+/*card prodotti*/
 
 .card-prodotti {
     display: grid;
@@ -199,6 +221,13 @@ p.display-xl {
     background-color: #F5F5F5;
 }
 
+.card-prodotti--gallery {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+
+/*button carrello*/
 
 .buy{
     background-color: transparent;
@@ -218,10 +247,6 @@ p.display-xl {
 .view-grid{
     gap: 82%;
 }
-
-/*.img-covercard {
-    height: 256px;
-}*/
 
 
 }

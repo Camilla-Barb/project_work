@@ -1,0 +1,23 @@
+
+.carousel {
+    background-color: $bg-color-gray;
+    min-height: 200px;
+    @include flex(space-between, center);
+    overflow: hidden;
+}
+
+.carousel-cell {
+    @include flex(flex-start, center);
+    flex-direction: column;
+    padding: 40px 2px 10px 2px;
+
+
+    p {
+        padding: 10px;
+        font-size: $font-size-m;
+        font-weight: 700;
+        line-height: 1.9rem;
+        letter-spacing: 00.01em;
+        text-align: center;
+    }
+}

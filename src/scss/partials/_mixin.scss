@@ -1,0 +1,25 @@
+/***************MIXIN*******************/
+
+@mixin overline {
+    font-size: $font-size-xs;
+    line-height: 3rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+}
+
+@mixin reset-html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+@mixin reset-body {
+    margin: 0;
+    font-family: $font-family;
+    background-color: $white;
+}
+
+@mixin flex ($x, $y) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}

@@ -1,0 +1,40 @@
+
+
+nav li {
+    display: inline;
+
+    svg {
+        color: $black;
+        margin: 0 0 0 20px;
+    }
+}
+
+.home,
+.listato {
+    display: none;
+}
+
+
+@media only screen and (min-width:767px) {
+    
+    nav li {
+    
+    svg {
+        display: none;
+            }
+    
+    a {
+        color: $black;
+        font-size: $font-style-l;
+        line-height: 21.09px;
+        font-weight: 700;
+        padding: 10px;
+            }
+    }
+    
+    
+    .home,
+    .listato {
+        display: inline;
+    }
+}

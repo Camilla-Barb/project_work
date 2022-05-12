@@ -4,9 +4,10 @@
 /*font-size*/
 /*font-weight*/
 /***************MIXIN*******************/
-/*general*/
-/*reset css*/
 /*****************FUNCTION*************************/
+/*@function calc-perc ($target, $container){
+    @return ($target/$container) * 100;
+}*/
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -40,12 +41,11 @@ p + .btn {
 }
 
 .btn .icon {
-  width: 18px;
+  width: 1.8rem;
   margin-left: 11px;
   vertical-align: middle;
 }
 
-/**********************BANNER*****************************/
 .banner {
   position: relative;
   background-color: #000;
@@ -79,12 +79,11 @@ p + .btn {
   display: none;
 }
 
-/**********************HEADER******************************/
 .header-menu {
   background-color: #fff;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
@@ -96,7 +95,6 @@ p + .btn {
   max-height: 58.31px;
 }
 
-/**********************NAV******************************/
 nav li {
   display: inline;
 }
@@ -105,17 +103,35 @@ nav li svg {
   margin: 0 0 0 20px;
 }
 
-.home, .listato {
+.home,
+.listato {
   display: none;
 }
 
-/**********************HERO******************************/
+@media only screen and (min-width: 767px) {
+  nav li svg {
+    display: none;
+  }
+  nav li a {
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 21.09px;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+  .home,
+.listato {
+    display: inline;
+  }
+}
 #hero {
   background: url("../img/strawberries1.webp") no-repeat fixed center/cover;
   width: 100%;
   height: 650px;
   display: flex;
   justify-content: center;
+  align-items: 0;
 }
 #hero h1 {
   font-size: 4rem;
@@ -148,7 +164,36 @@ nav li svg {
   padding: 0;
 }
 
-/**********************MEDIA-TESTO***********************************/
+@media only screen and (min-width: 767px) {
+  /*HERO*/
+  #hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: 0;
+  }
+  #hero .btn--text {
+    padding-top: 20px;
+  }
+  #hero .hero-caption {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 532px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  #hero .hero-caption .description {
+    display: block;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.01em;
+    padding: 40px 0;
+  }
+}
 .media-testo {
   grid-template-columns: 1fr;
   grid-template-rows: 365px auto;
@@ -185,7 +230,7 @@ nav li svg {
 }
 
 .btn {
-  padding: 16px 32px;
+  padding: 1.6rem 32px;
   font-weight: 700;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -195,7 +240,43 @@ nav li svg {
   display: inline-block;
 }
 
-/****************************CAROUSEL***********************************/
+@media only screen and (min-width: 767px) {
+  .media-testo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    background-color: #fff;
+    padding-top: 4%;
+  }
+
+  .media-testo--reverse .media {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .media {
+    min-height: 300px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .media-testo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    background-color: #fff;
+    padding-top: 4%;
+  }
+
+  .media-testo--reverse .media {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .testo {
+    padding: 8.4121976866%;
+    align-self: center;
+  }
+}
 .carousel {
   background-color: #F5F5F5;
   min-height: 200px;
@@ -207,10 +288,10 @@ nav li svg {
 
 .carousel-cell {
   display: flex;
-  padding: 40px 2px 10px 2px;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 2px 10px 2px;
 }
 .carousel-cell p {
   padding: 10px;
@@ -221,7 +302,7 @@ nav li svg {
   text-align: center;
 }
 
-/****************************FORM FOOTER***********************************/
+/*************************FOOTER***************************/
 .footer_column_list {
   display: none;
 }
@@ -235,6 +316,7 @@ nav li svg {
 .footer-grid .small {
   padding: 20px;
   color: #9D9D9D;
+  margin-left: 2%;
   margin-right: 19.53%;
 }
 
@@ -243,9 +325,9 @@ form {
 }
 form label {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
 }
 form input {
   border: 0;
@@ -258,7 +340,7 @@ form input {
 footer button {
   border: 1px solid #9D9D9D;
   margin: 50px 46.875% 20px 0px;
-  padding: 16px 32px;
+  padding: 1.6rem 32px;
   font-weight: 700;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -281,7 +363,8 @@ footer button svg {
   margin-top: 50px;
 }
 
-.footer-help, .company {
+.footer-help,
+.company {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -322,8 +405,8 @@ footer button svg {
 
 .copyright {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: #000;
   height: 110px;
@@ -339,45 +422,7 @@ footer button svg {
   gap: 8px;
 }
 
-/****************************MEDIAQUERIES*************************************************/
-/*TABLET*/
 @media only screen and (min-width: 767px) {
-  /*******************NAV*****************/
-  nav li svg {
-    display: none;
-  }
-  nav li a {
-    color: #000;
-    font-size: 1.8rem;
-    line-height: 21.09px;
-    font-weight: 700;
-    padding: 10px;
-  }
-
-  .home,
-.listato {
-    display: inline;
-  }
-
-  /*MEDIA TESTO + REVERSE*/
-  .media-testo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    background-color: #fff;
-    padding-top: 4%;
-  }
-
-  .media-testo--reverse .media {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .media {
-    min-height: 300px;
-  }
-
-  /*FORM FOOTER*/
   footer button {
     margin: 50px 70.404% 10px 10px;
   }
@@ -385,59 +430,20 @@ footer button svg {
   .footer-grid p {
     margin: 20px 50px 0 40px;
   }
+  .footer-grid .small {
+    margin-left: 10%;
+  }
 
   form {
     margin: 20px 6.518%;
   }
 }
-/**DISPLAY LARGE PC (Da 1024 IN POI)***/
 @media only screen and (min-width: 1023px) {
-  /*******************HERO***************/
-  #hero {
-    display: flex;
-    justify-content: flex-start;
-  }
-  #hero .hero-caption {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.55);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.3px);
-    -webkit-backdrop-filter: blur(7.3px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 532px;
-    margin-left: 20px;
-  }
-  #hero .hero-caption .description {
-    display: block;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    align-self: flex-start;
-    letter-spacing: 0.01em;
-  }
-
-  /******************MEDIA TESTO*****************/
-  .media-testo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    background-color: #fff;
-    padding-top: 4%;
-  }
-
-  .media-testo--reverse .media {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .testo {
-    padding: 8.4121976866%;
-    align-self: center;
-  }
-
-  /**********FOOTER***********/
   .footer-grid .bold-text {
     padding: 30px 50px 20px 10px;
+  }
+  .footer-grid .small {
+    margin-left: 5%;
   }
 
   form {
@@ -515,6 +521,9 @@ footer button svg {
 @media only screen and (min-width: 1439px) {
   .footer-grid {
     margin-left: 15%;
+  }
+  .footer-grid .small {
+    margin-left: 2%;
   }
 }
 

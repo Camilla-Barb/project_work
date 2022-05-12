@@ -43,13 +43,14 @@
 <!----------------------------HEADER + NAV----------------------------------->
 <header>
    <div class="header-menu">
-       <nav>
+      <nav>
         <ul>
             <li>
                 <a href="index.html">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.9075L12 5.65754L6 10.9075V20H18V10.9075ZM12 3L20 10V20V22H18H6H4V20V10L12 3Z" fill="black"/>
                     </svg>
+                    <span class="screen-reader-only">Homepage</span>
                 </a>
             </li>
             <li class="home"><a href="index.html">Home</li></a>
@@ -58,6 +59,7 @@
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4H9V9H4V4ZM2 2H4H9H11V4V9V11H9H4H2V9V4V2ZM4 15H9V20H4V15ZM2 13H4H9H11V15V20V22H9H4H2V20V15V13ZM20 4H15V9H20V4ZM15 2H13V4V9V11H15H20H22V9V4V2H20H15ZM15 15H20V20H15V15ZM13 13H15H20H22V15V20V22H20H15H13V20V15V13Z" fill="black"/>
                     </svg>
+                    <span class="screen-reader-only">Listato</span>
                 </a>
             </li>
             <li class="listato"><a href="prodotti.html">Listato</li></a>
@@ -82,10 +84,10 @@
 <!------------------------HERO CARD------------------------------------>
 <div class="view-grid">
   <div class="grid-icon">
-    <button  class="toggle-card-view">
-      <img src="assets/icon/menu.svg" alt="griglia a quattro elementi"/></button>
-    <button class="toggle-gallery-view">
-    <img src="assets/icon/grid_products.svg" alt="griglia a sei elementi"/></button>
+    <button class="four-products-list">
+      <img src="assets/icon/menu.svg" alt="visualizzazione a quattro elementi"/></button>
+    <button class="six-products-list">
+    <img src="assets/icon/grid_products.svg" alt="visualizzazione a sei elementi"/></button>
   </div>
   <div class="products-result">
   <p class="only-mobile-text">1055 results</p>
@@ -104,7 +106,8 @@
         <p class="new">new</p>
         <p class="quantity">x6</p>
         <button class="wishlist">
-          <img src="assets/icon/heart.svg" alt="wishlist" />
+          <img src="assets/icon/heart.svg" alt="lista preferiti"/>
+        <span class="screen-reader-only">Wishlist</span>
         </button>
       </div>
     </div>
@@ -118,6 +121,7 @@
     <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z" fill="black"/>
     </svg>
+    <span class="screen-reader-only">Carrello</span>
     </button>
     </div>
   </div>
@@ -132,7 +136,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -147,6 +151,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -160,7 +165,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -175,6 +180,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -189,7 +195,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -204,6 +210,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -217,7 +224,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -232,6 +239,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -245,7 +253,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -260,6 +268,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -273,7 +282,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -288,35 +297,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-
-<a href="#">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -331,7 +312,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -346,6 +327,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -360,7 +342,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -375,34 +357,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-<a href="#">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -417,7 +372,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -432,6 +387,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -445,7 +401,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -460,62 +416,7 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-<a href="#">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-<a href="#">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>
@@ -530,7 +431,7 @@
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" /></button>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -545,6 +446,124 @@
             d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
             fill="black" />
         </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+<a href="#">
+  <div class="card">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+<a href="#">
+  <div class="card">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+<a href="#">
+  <div class="card">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+
+<a href="#">
+  <div class="card">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
       </button>
     </div>
     </div>

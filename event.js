@@ -1,17 +1,24 @@
-const toggleCardViewButton= document.querySelector(".toggle-card-view");
+const fourProductsListButton= document.querySelector(".four-products-list");
 
-const toggleGalleryViewButton = document.querySelector(".toggle-gallery-view");
+const sixProductsListButton = document.querySelector(".six-products-list");
 
 const cardProdotti = document.querySelector(".card-prodotti");
 
-toggleCardViewButton.addEventListener("click", toggleCardView);
-toggleGalleryViewButton.addEventListener("click", toggleGalleryView);
 
-function toggleCardView(){
-    cardProdotti.classList.remove(".card-prodotti--gallery");
+
+fourProductsListButton.addEventListener("click", fourProductsList);
+sixProductsListButton.addEventListener("click", sixProductsList);
+
+
+function fourProductsList(){
+    cardProdotti.classList.remove("card-prodotti--gallery");
+    fourProductsList.classList.add("active");
+    sixProductsList.classList.remove("active");
 }
 
-function toggleGalleryView() {
-    cardProdotti.classList.add(".card-prodotti--gallery");
+function sixProductsList() {
+    cardProdotti.classList.add("card-prodotti--gallery");
+    sixProductsList.classList.add("active");
+    fourProductsList.classList.remove("active");
 }
 

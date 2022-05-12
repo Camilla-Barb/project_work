@@ -1,0 +1,280 @@
+/*************************FOOTER***************************/
+
+.footer_column_list {
+    display: none;
+}
+
+.footer-grid {
+
+    .bold-text {
+        padding: 50px 0 20px 6.25%;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 28.13px;
+    }
+
+    .small {
+        padding: 20px;
+        color: $gray;
+        margin-left: 2%;
+        margin-right: 19.53%;
+    }
+}
+
+form {
+    text-align: center;
+
+    label {
+        @include flex(center, flex-start);
+        flex-direction: column;
+    }
+
+    input {
+        border: 0;
+        border-bottom: 2px solid $black;
+        width: 87.2%;
+        padding: 10px;
+        margin: auto;
+
+    }
+}
+
+
+
+footer button {
+    border: 1px solid $gray;
+    margin: 50px 46.875% 20px 0px;
+    padding: $font-size-m 32px;
+    font-weight: 700;
+    font-size: $font-size-s;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $gray;
+    text-decoration: none;
+
+
+    svg {
+        margin: 3px 0 0 5px;
+    }
+}
+
+
+
+.info {
+    a {
+        color: $black;
+    }
+
+    .plus {
+        margin-left: auto;
+    }
+}
+
+
+.footer-help {
+    margin-top: 50px;
+}
+
+.footer-help,
+.company {
+    @include flex(flex-start, center);
+    font-size: $font-size-m;
+    line-height: 18.75px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+    background-color: $bg-color-gray;
+
+}
+
+
+.list {
+    background-color: $bg-color-gray;
+}
+
+.list li {
+    font-size: $font-size-s;
+    font-weight: 500;
+    height: 30px;
+    padding: 10px;
+}
+
+
+
+.social {
+
+    p {
+        padding: 50px 0 20px 0;
+        text-align: center;
+        font-size: $font-size-s;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+
+    .icon {
+        @include flex(center, center);
+        padding-bottom: 100px;
+        gap: 25px;
+    }
+}
+
+
+.copyright {
+    @include flex(center, center);
+    flex-direction: column;
+    background-color: $black;
+    height: 110px;
+    line-height: 140%;
+    text-align: center;
+
+    a {
+        color: $white;
+    }
+}
+
+
+.link-footer {
+    display: flex;
+    gap: 8px;
+
+}
+
+@media only screen and (min-width:767px) {
+    
+        footer button {
+            margin: 50px 70.404% 10px 10px;
+        }
+    
+    .footer-grid{
+        
+        p {
+            margin: 20px 50px 0 40px;
+        }
+
+        .small{
+        margin-left: 10%;
+        }
+    }
+
+        form {
+            margin: 20px 6.518%;
+        }
+}
+
+
+
+@media only screen and (min-width:1023px) {
+    
+    .footer-grid{
+        
+        .bold-text {
+            padding: 30px 50px 20px 10px;
+        }
+
+        .small{
+            margin-left: 5%;
+        }
+
+    }
+    
+    
+        form {
+            text-align: left;
+            margin-left: 50px;
+    
+    
+            label {
+                display: inline-block;
+            }
+    
+            input {
+                width: 317px;
+            }
+        }
+    
+        .info {
+            display: none;
+        }
+    
+        .main-footer {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 50% 25% 25%;
+            padding: 20px;
+    
+        }
+    
+        .social {
+            @include flex(center, center);
+            gap: 2%;
+    
+            .icon {
+                display: block;
+                padding: 20px 0px 0 2px;
+            }
+        }
+    
+    
+    
+        .footer_column_list {
+            padding-top: 50px;
+            display: flex;
+            gap: 10%;
+            margin-left: 80%;
+    
+            .col-2 {
+                padding-right: 0;
+            }
+    
+            ul {
+                width: 224px;
+                padding-top: 10%;
+            }
+    
+            li a {
+                font-size: $font-size-m;
+                list-style-type: none;
+                letter-spacing: 0.01em;
+                color: $black;
+                line-height: 3.5rem;
+                padding: 5%;
+            }
+    
+            span {
+                font-size: $font-size-m;
+                font-weight: $bold;
+    
+            }
+        }
+    
+        footer button {
+            margin: 20px 0 30px 15px;
+        }
+    
+    
+        .copyright {
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+    
+            p {
+                color: $white;
+            }
+        }
+}
+
+
+@media only screen and (min-width:1439px) {
+
+.footer-grid {
+    margin-left: 15%;
+
+    .small{
+        margin-left: 2%;
+        }
+
+    }
+
+}
