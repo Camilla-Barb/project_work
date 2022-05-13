@@ -65,7 +65,7 @@
         </ul>
        </nav>
        <div class="logo-container">
-        <img src="assets/img/logo-placeholder.png" alt="logo">
+        <p class="logo">Brand Logo</p>
        </div>
 
        <div></div>
@@ -184,7 +184,7 @@
 <form method="post" action="">
   <label for="email"></label>
   <input type="email" name="email" id="email" placeholder="Insert your email and get 5% discount">
-  <button type="submit">Send
+  <button type="button" id="newsletter-button" data-micromodal-trigger="modal-1">Send
     <svg
     width="19"
     height="18"
@@ -250,7 +250,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black"/>
     </svg> </span>  
   </a>
-  <div class="list">
+  <div class="list-help">
   <ul>
     <li><a href="#">Find my order</a></li>
     <li><a href="#">FAQ</a></li>
@@ -268,7 +268,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black"/>
     </svg> </span>
   </a>
-  <div class="list">
+  <div class="list-company">
     <ul>
       <li><a href="#">#DiscoverBrandName</a></li>
       <li><a href="#">Catalogs</a></li>
@@ -314,6 +314,52 @@
 </div>
 
 </footer>
+
+
+<!-- [1] -->
+<div class="modal" id="modal-1" aria-hidden="true">
+
+  <!-- [2] -->
+  <div class="modal-backdrop" tabindex="-1" data-micromodal-close>
+
+    <!-- [3] -->
+    <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+
+      <header>
+        <h2 id="modal-1-title">
+          Modal Title
+        </h2>
+
+        <!-- [4] -->
+        <button aria-label="Close modal" data-micromodal-close></button>
+      </header>
+
+      <div id="modal-1-content">
+        Modal Content
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="accordion.js" type="javascript/text"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+        
+<script src="modal.js" type="javascript/text"></script>
 
 </body>
 </html>

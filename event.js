@@ -1,3 +1,6 @@
+
+/**VISUALIZZAZIONE GRIGLIE PAGINA 2 */
+
 const fourProductsListButton= document.querySelector(".four-products-list");
 
 const sixProductsListButton = document.querySelector(".six-products-list");
@@ -12,13 +15,13 @@ sixProductsListButton.addEventListener("click", sixProductsList);
 
 function fourProductsList(){
     cardProdotti.classList.remove("card-prodotti--gallery");
-    fourProductsList.classList.add("active");
-    sixProductsList.classList.remove("active");
+    fourProductsListButton.classList.add("active");
+    sixProductsListButton.classList.remove("active");
 }
 
 function sixProductsList() {
     cardProdotti.classList.add("card-prodotti--gallery");
-    sixProductsList.classList.add("active");
-    fourProductsList.classList.remove("active");
+    sixProductsListButton.classList.add("active");
+    fourProductsListButton.classList.remove("active");
 }
 

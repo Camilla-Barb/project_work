@@ -89,17 +89,25 @@ footer button {
 }
 
 
-.list {
+.list-help, .list-company {
+    display: none;
     background-color: $bg-color-gray;
+
+    li {
+            font-size: $font-size-s;
+            font-weight: 500;
+            height: 30px;
+            padding: 10px;
+        }
 }
 
-.list li {
-    font-size: $font-size-s;
-    font-weight: 500;
-    height: 30px;
-    padding: 10px;
+.list-help--viewAll{
+    display: block;
 }
 
+.list-company--viewAll {
+    display: block;
+}
 
 
 .social {

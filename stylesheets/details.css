@@ -1,0 +1,42 @@
+/*slider img*/
+
+.slider-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.slider-card img{
+    width: 531px;
+    height: 531px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.description{
+    background-color: #F5F5F5;
+}
+
+.description-product{
+    text-align: left;
+    margin: 5px 0 10px 5px;
+
+}
+
+.description-product p.bold {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.description-product p.small{
+    font-size: 1.4rem;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.description button.carrello{
+    background-color: #000;
+    color:#fff;
+}
