@@ -19,6 +19,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
 
+
+    <!--SWIPER CAROUSEL-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -45,45 +49,83 @@
                 <li>
                     <a href="index.html">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M18 10.9075L12 5.65754L6 10.9075V20H18V10.9075ZM12 3L20 10V20V22H18H6H4V20V10L12 3Z"
-                                    fill="black" />
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 10.9075L12 5.65754L6 10.9075V20H18V10.9075ZM12 3L20 10V20V22H18H6H4V20V10L12 3Z"
+                            fill="black" />
                         </svg>
-                    <span class="screen-reader-only">Homepage</span>
-                        </a>
-                    </li>
-                    <li class="home"><a href="index.html">Home</li></a>
-                    <li>
-                        <a href="prodotti.html">
+<span class="screen-reader-only">Homepage</span>
+</a>
+</li>
+
+<li class="home"><a href="index.html">Home</li></a>
+                    <li><a href="prodotti.html">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4 4H9V9H4V4ZM2 2H4H9H11V4V9V11H9H4H2V9V4V2ZM4 15H9V20H4V15ZM2 13H4H9H11V15V20V22H9H4H2V20V15V13ZM20 4H15V9H20V4ZM15 2H13V4V9V11H15H20H22V9V4V2H20H15ZM15 15H20V20H15V15ZM13 13H15H20H22V15V20V22H20H15H13V20V15V13Z"
-                                    fill="black" />
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 4H9V9H4V4ZM2 2H4H9H11V4V9V11H9H4H2V9V4V2ZM4 15H9V20H4V15ZM2 13H4H9H11V15V20V22H9H4H2V20V15V13ZM20 4H15V9H20V4ZM15 2H13V4V9V11H15H20H22V9V4V2H20H15ZM15 15H20V20H15V15ZM13 13H15H20H22V15V20V22H20H15H13V20V15V13Z"
+                            fill="black" />
                             </svg>
                             <span class="screen-reader-only">Listato</span>
                         </a>
                     </li>
-                    <li class="listato"><a href="prodotti.html">Listato</li></a>
-                </ul>
-            </nav>
-            <div class="logo-container">
-                <p class="logo">Brand Logo</p>
-            </div>
+<li class="listato"><a href="prodotti.html">Listato</li></a>
+</ul>
+</nav>
+<div class="logo-container">
+<p class="logo">Brand Logo</p>
+</div>
 
-            <div></div>
+<div></div>
 
-        </div>
+</div>
+
+</header>
 
 <!---------------------SLIDER CARD------------------------------->
 
-<div class="slider-card">
+<main>
+<div class="go-back">
+    <img src="/assets/icon/freccia_sx_black.svg" alt="torna indietro"/>
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <a href="prodotti.html">Products list</a>
+    <span>/</span>
+    <a href="details.html">Product</a>
+</div>
+
+<div class="product-area"> 
+<div class="product-images-mobile">
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="assets/img/strawberries3.webp" alt="fragola1" />
+        <div class="icon-on-img">
+            <a href="prodotti.html"><img src="/assets/icon/freccia_sx_black.svg" alt="torna indietro"/></a>
+            <button type="button" class="wishlist"><img src="/assets/icon/heart.svg" alt="aggiungi ai preferiti"/>
+            </button>
+        </div>
+        </div>
+        <div class="swiper-slide"><img src="assets/img/strawberries4.webp" alt="fragola1" /></div>
+        <div class="swiper-slide"><img src="assets/img/strawberries5.webp" alt="fragola1" /></div>
+        <div class="swiper-slide"><img src="assets/img/strawberries6.webp" alt="fragola1" /></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+</div>
+</div>
+
+
+<div class="product-images-desktop"> 
     <img src="assets/img/strawberries3.webp" alt="fragola1"/>
     <img src="assets/img/strawberries4.webp" alt="fragola1" />
     <img src="assets/img/strawberries5.webp" alt="fragola1" />
     <img src="assets/img/strawberries6.webp" alt="fragola1" />
 </div>
+
 
 <div class="description">
 <div class="description-product">
@@ -91,12 +133,80 @@
     <p class="small">Description</p>
 </div>
 <div class="price">
-    <p class="bold">€ 120,00 <small>-50%</small></p>
+    <p class="bold">€ 120,00 <font size="3">-50%</font> </p>
     <p class="small">€ 240,00</p>
 </div>
-<button class="carrello">Add to cart<img src="assets/icon/carrello_white.svg" alt="aggiungi al carrello"/>
+<div class="cart-button">
+<button type="button">Add to cart<img src="assets/icon/carrello_white.svg" alt="aggiungi al carrello"/>
+</button>
+<button class="favourite" type="button"><img src="/assets/icon/heart_white.svg" alt="aggiungi ai preferiti"/>
 </button>
 </div>
+</div>
+
+</div>
+
+
+<div class="info-products">
+
+    <button type="button">Description<span class="plus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z"
+                    fill="black" />
+            </svg> </span>
+        </button>
+
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Semper at molestie vehicula in dui, sit cursus. Ultrices convallis volutpat dignissim velit sed.<br>
+        Massa, congue purus suspendisse faucibus tincidunt. Sit commodo at in at aliquam placerat odio. 
+    </p>
+    </div>
+
+
+
+    <button type="button">Details<span class="plus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
+            </svg> </span>
+    </button>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Semper at molestie vehicula in dui, sit cursus. Ultrices convallis volutpat dignissim velit sed.<br>
+            Massa, congue purus suspendisse faucibus tincidunt. Sit commodo at in at aliquam placerat odio.
+        </p>
+    </div>
+
+
+    <button type="button">Tech Specs<span class="plus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
+            </svg> </span>
+    </button>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Semper at molestie vehicula in dui, sit cursus. Ultrices convallis volutpat dignissim velit sed.<br>
+            Massa, congue purus suspendisse faucibus tincidunt. Sit commodo at in at aliquam placerat odio.
+        </p>
+    </div>
+
+
+
+    <button type="button">Care Information<span class="plus">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
+            </svg> </span>
+    </button>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Semper at molestie vehicula in dui, sit cursus. Ultrices convallis volutpat dignissim velit sed.<br>
+            Massa, congue purus suspendisse faucibus tincidunt. Sit commodo at in at aliquam placerat odio.
+        </p>
+    </div>
+
+
+</div>
+</main>
 
     <!-----------------------------CAROUSEL-------------------------------------------->
     <div class="carousel">
@@ -283,6 +393,9 @@
         </div>
 
     </footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="/js/carousel.js" type="javascript/text"></script>
 
 </body>
 

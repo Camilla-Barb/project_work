@@ -1,42 +1,219 @@
 /*slider img*/
 
-.slider-card{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
-    margin-top: 150px;
+.product-images-desktop{
+    display: none;
+}
+
+
+.swiper-slide img{
+    width: 100%;
     overflow: hidden;
 }
 
-.slider-card img{
-    width: 531px;
-    height: 531px;
-    transform: translate(-50%, -50%);
-    margin: auto;
+.icon-on-img{
+    display: flex;
+    align-items: center;
+    width: 4.9093%;
+}
+
+
+.icon-on-img a, .icon-on-img button{
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    border: 0
+}
+
+.icon-on-img button {
+    top: 3%;
+    right: 2%;
+    width: 20px;
+}
+
+.icon-on-img a{
+    top: 3%;
+    left: 2%;
+}
+
+
+
+span.swiper-pagination-bullet{
+    flex-grow: 1;
+    border-radius: 0;
+    margin: 0;
+    color: #000;
 }
 
 .description{
+    padding: 10px;
     background-color: #F5F5F5;
 }
 
-.description-product{
-    text-align: left;
-    margin: 5px 0 10px 5px;
-
+.cart-button {
+    display: flex;
 }
 
-.description-product p.bold {
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-.description-product p.small{
-    font-size: 1.4rem;
-    padding-top: 5px;
+.description .cart-button button{
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:95%;
+    margin-left: 2.2%;
     margin-bottom: 20px;
 }
 
-.description button.carrello{
-    background-color: #000;
-    color:#fff;
+.cart-button button img{
+    margin-left: 10px;
+    align-self: auto;
 }
+
+.description .cart-button button.favourite{
+    display: none;
+    padding: 10px 20px;
+    width: 4%;
+}
+
+.cart-button button.favourite img{
+    margin-right: 2px;
+}
+
+.description-product .bold{
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+.description-product .small{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+.price {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.price .bold{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.price .small{
+    font-size: 1.6rem;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.go-back{
+    display: none;
+}
+
+.info-products{
+    padding-top: 20px;
+}
+
+.info-products button{
+    display: flex;
+    align-items: center;
+    border:0;
+    height: 48px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.info-products span{
+    margin-left: auto;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 2.4rem;
+    padding: 20px;
+    letter-spacing: 0.01em;
+}
+
+
+
+/*********************MEDIAQUERIES*******************************************/
+
+@media only screen and (min-width:767px) {
+
+    .go-back {
+        display: block;
+        height: 50px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    
+        }
+    
+    .go-back a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: bold;
+        }
+    
+    .go-back span {
+        font-weight: bold;
+        }
+
+    .product-images-mobile{
+        display: none;
+        }
+
+    .product-images-desktop{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 50px;
+        box-sizing: border-box;
+    }
+
+    .product-images-desktop img{
+        border: 0.5px solid #fff;
+        width: 100%;
+    }
+
+
+    .description{
+        background-color: #fff;
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .product-area {
+        display: flex;
+
+        }
+
+    .info-products {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .cart-button button img{
+        margin-left: auto;
+    }
+
+    .description .cart-button button.favourite{
+        display: block;
+        padding-right: 37px;
+    }
+}
+
