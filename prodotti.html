@@ -11,6 +11,7 @@
 <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 <link href="stylesheets/prodotti.css" rel="stylesheet" type="text/css"/>
 
+
 <!--------------------FONT-------------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
 
 <div class="banner">
         <span>Sign up to our newsletter and get 10% discount</span>
-    <button>
+    <button id="close">
         <span class="screen-reader-only">Chiudi</span>
         <svg xmlns="http://www.w3.org/2000/svg" 
         class="h-6 w-6" 
@@ -53,7 +54,7 @@
                     <span class="screen-reader-only">Homepage</span>
                 </a>
             </li>
-            <li class="home"><a href="index.html">Home</li></a>
+            <li class="home"><a aria-label="homepage" href="index.html">Home</li></a>
             <li>
                 <a href="prodotti.html">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +63,7 @@
                     <span class="screen-reader-only">Listato</span>
                 </a>
             </li>
-            <li class="listato"><a href="prodotti.html">Listato</li></a>
+            <li class="listato"><a aria-label="lista prodotti" href="prodotti.html">Listato</li></a>
         </ul>
       </nav>
       <div class="logo-container">
@@ -84,9 +85,9 @@
 <!------------------------HERO CARD------------------------------------>
 <div class="view-grid">
   <div class="grid-icon">
-    <button class="four-products-list">
+    <button aria-label="visualizzazione quattro elementi" class="four-products-list">
       <img src="assets/icon/menu.svg" alt="visualizzazione a quattro elementi"/></button>
-    <button class="six-products-list">
+    <button aria-label="visualizzazione sei elementi" class="six-products-list">
     <img src="assets/icon/grid_products.svg" alt="visualizzazione a sei elementi"/></button>
   </div>
   <div class="products-result">
@@ -99,13 +100,14 @@
 
 <div class="card-prodotti">
 
-<a href="details.html"><div class="card">
+<a href="details.html">
+  <div class="card" aria-label="prodotto 1" id="product-1">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola"/>
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist">
+        <button data-id="1" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist">
           <img src="assets/icon/heart.svg" alt="lista preferiti"/>
         <span class="screen-reader-only">Wishlist</span>
         </button>
@@ -131,13 +133,13 @@
   
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 2" id="product-2">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+        <button data-id="2" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -160,13 +162,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 3" id="product-3">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="3" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -190,13 +192,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 4" id="product-4">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="4" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -219,13 +221,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 5" id="product-5">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola"/>
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="5" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -248,13 +250,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 6" id="product-6">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="6" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -277,43 +279,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 7" id="product-7">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
-        <span class="screen-reader-only">Carrello</span>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-
-<a href="details.html">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="7" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -337,13 +309,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 8" id="product-8">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="8" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -367,42 +339,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 9" id="product-9">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
-        <span class="screen-reader-only">Carrello</span>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-<a href="details.html">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+        <button data-id="9" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
       </div>
     </div>
     <div class="product-description">
@@ -426,13 +369,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 10" id="product-10">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+        <button data-id="10" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -455,71 +398,13 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 11" id="product-11">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
-        <span class="screen-reader-only">Carrello</span>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-<a href="details.html">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
-      </div>
-    </div>
-    <div class="product-description">
-      <h2>Product name</h2>
-      <p>Description</p>
-    </div>
-    <div class="buy">
-      <p class="bold">€ 120,00</p>
-      <p class="small">€ 240,00</p>
-      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
-            fill="black" />
-        </svg>
-        <span class="screen-reader-only">Carrello</span>
-      </button>
-    </div>
-    </div>
-    </a>
-
-
-<a href="details.html">
-  <div class="card">
-    <div class="img-covercard">
-      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
-      <div class="icon-on-img">
-        <p class="new">new</p>
-        <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+        <button data-id="11" aria-label="aggiungi ai prefriti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -543,13 +428,130 @@
 
 
 <a href="details.html">
-  <div class="card">
+  <div class="card" aria-label="prodotto 12" id="product-12">
     <div class="img-covercard">
       <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
       <div class="icon-on-img">
         <p class="new">new</p>
         <p class="quantity">x6</p>
-        <button class="wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+        <button data-id="12" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti" /></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+<a href="details.html">
+  <div class="card" aria-label="prodotto 13" id="product-13">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button data-id="13" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+<a href="details.html">
+  <div class="card" aria-label="prodotto 14" id="product-14">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button data-id="14" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+<a href="details.html">
+  <div class="card" aria-label="prodotto 15" id="product-15">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button data-id="15" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="lista preferiti"/></button>
+      </div>
+    </div>
+    <div class="product-description">
+      <h2>Product name</h2>
+      <p>Description</p>
+    </div>
+    <div class="buy">
+      <p class="bold">€ 120,00</p>
+      <p class="small">€ 240,00</p>
+      <button><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.68883 2.99992C3.88482 1.54338 5.3404 0.333252 6.99977 0.333252C8.65913 0.333252 10.1147 1.54338 10.3107 2.99992H12.2311C12.9675 2.99992 13.5644 3.59687 13.5644 4.33325C13.5644 4.39634 13.5599 4.45936 13.551 4.52181L12.4082 12.5218C12.3143 13.1787 11.7518 13.6666 11.0882 13.6666H2.9113C2.24776 13.6666 1.6852 13.1787 1.59136 12.5218L0.448507 4.52181C0.344367 3.79283 0.850899 3.11746 1.57988 3.01332C1.64234 3.0044 1.70535 2.99992 1.76844 2.99992H3.68883ZM8.95206 2.99992C8.7494 2.29197 7.93216 1.66659 7.00014 1.66659C6.06812 1.66659 5.25088 2.29197 5.04822 2.99992H8.95206ZM1.76827 4.33325H3.66626V5.66658H4.9996V4.33325H8.9996V5.66658H10.3329V4.33325H12.2309L11.0881 12.3333H2.91113L1.76827 4.33325Z"
+            fill="black" />
+        </svg>
+        <span class="screen-reader-only">Carrello</span>
+      </button>
+    </div>
+    </div>
+    </a>
+
+
+
+<a href="details.html">
+  <div class="card" aria-label="prodotto 16" id="product-16">
+    <div class="img-covercard">
+      <img src="assets/img/strawberries3.webp" alt="immagine fragola" />
+      <div class="icon-on-img">
+        <p class="new">new</p>
+        <p class="quantity">x6</p>
+        <button data-id="16" aria-label="aggiungi ai preferiti" class="aggiungi-alla-wishlist"><img src="assets/icon/heart.svg" alt="aggiungi ai preferiti"/></button>
       </div>
     </div>
     <div class="product-description">
@@ -592,8 +594,8 @@
     <p class="bold-text">Keep you informed about news, trends, and special offers.</p>
     <form method="post" action="">
       <label for="email"></label>
-      <input type="email" name="email" id="email" placeholder="Insert your email and get 5% discount">
-      <button type="submit">Send
+      <input aria-label="Inserisci email per mantenerti informato" type="email" name="email" id="email" placeholder="Insert your email and get 5% discount">
+      <button aria-label="Invia" type="submit">Send
         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M15.0858 10.0001H0.5V8.00008H15.0858L8.79289 1.70718L10.2071 0.292969L18.9142 9.00008L10.2071 17.7072L8.79289 16.293L15.0858 10.0001Z"
@@ -619,12 +621,12 @@
       </svg>
       <span>May we help you?</span>
       <ul>
-        <li><a href="#">Find my order</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Product care</a></li>
-        <li><a href="#">Shipping</a></li>
-        <li><a href="#">Payment</a></li>
-        <li><a href="#">Contact us</a></li>
+      <li><a href="#" aria-label="Trova il mio ordine">Find my order</a></li>
+      <li><a href="#" aria-label="Domande">FAQ</a></li>
+      <li><a href="#" aria-label="Cura del prodotto">Product care</a></li>
+      <li><a href="#" aria-label="Spedizione">Shipping</a></li>
+      <li><a href="#" aria-label="Pagamento">Payment</a></li>
+      <li><a href="#" aria-label="Contattaci">Contact us</a></li>
       </ul>
     </div>
     <div class="col-2">
@@ -635,12 +637,12 @@
       </svg>
       <span>Company</span>
       <ul>
-        <li><a href="#">#DiscoverBrandName</a></li>
-        <li><a href="#">Catalogs</a></li>
-        <li><a href="#">For professionals</a></li>
-        <li><a href="#">Hotel & Restaurant</a></li>
-        <li><a href="#">Arcturus Group</a></li>
-        <li><a href="#">Work with us</a></li>
+        <li><a href="#" aria-label="Scopri il Brand Name">#DiscoverBrandName</a></li>
+        <li><a href="#" aria-label="Cataloghi">Catalogs</a></li>
+        <li><a href="#" aria-label="Per professionisti">For professionals</a></li>
+        <li><a href="#" aria-label="Hotel e ristoranti">Hotel & Restaurant</a></li>
+        <li><a href="#" aria-label="Arcturus Group">Arcturus Group</a></li>
+        <li><a href="#" aria-label="Lavora con noi">Work with us</a></li>
       </ul>
     </div>
   </div>
@@ -649,7 +651,7 @@
   <!--fine componente-->
 
   <div class="info">
-    <a href="#" class="footer-help"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+    <button type="button" aria-label="come possiamo aiutarti?"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M10 20C11.7246 20 13.387 19.562 14.8595 18.7418L19.0947 19.0947L18.7418 14.8595C19.562 13.387 20 11.7246 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM14.115 16.8621L14.3916 16.6958L16.9053 16.9053L16.6958 14.3916L16.8621 14.115C17.603 12.8824 18 11.4715 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.4715 18 12.8824 17.603 14.115 16.8621ZM10.0003 14.998C10.5528 14.998 11.0007 14.5503 11.0007 13.998C11.0007 13.4458 10.5528 12.998 10.0003 12.998C9.44786 12.998 9 13.4458 9 13.998C9 14.5503 9.44786 14.998 10.0003 14.998ZM9 12H11V11C11 11.0024 11.0047 10.9972 11.0154 10.9854C11.0417 10.9565 11.1039 10.888 11.2205 10.7955C11.3207 10.716 11.3517 10.6954 11.6048 10.535C12.4661 9.98899 13 9.03956 13 8C13 6.34315 11.6569 5 10 5C8.34315 5 7 6.34315 7 8H9C9 7.44772 9.44772 7 10 7C10.5523 7 11 7.44772 11 8C11 8.34732 10.8225 8.66287 10.534 8.84581C10.2102 9.05108 10.1564 9.08671 9.97749 9.22865C9.38274 9.70048 9 10.2627 9 11V12Z"
@@ -659,19 +661,19 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
         </svg> </span>
-    </a>
+      </button>
     <div class="list">
       <ul>
-        <li><a href="#">Find my order</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Product care</a></li>
-        <li><a href="#">Shipping</a></li>
-        <li><a href="#">Payment</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#" aria-label="Trova il mio ordine">Find my order</a></li>
+        <li><a href="#" aria-label="Domande">FAQ</a></li>
+        <li><a href="#" aria-label="Cura del prodotto">Product care</a></li>
+        <li><a href="#" aria-label="Spedizione">Shipping</a></li>
+        <li><a href="#" aria-label="Pagamento">Payment</a></li>
+        <li><a href="#" aria-label="Contattaci">Contact us</a></li>
       </ul>
     </div>
 
-    <a href="#" class="company"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+    <button type="button" aria-label="dettagli sulla compagnia"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
@@ -681,15 +683,15 @@
           xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
         </svg> </span>
-    </a>
+      </button>
     <div class="list">
       <ul>
-        <li><a href="#">#DiscoverBrandName</a></li>
-        <li><a href="#">Catalogs</a></li>
-        <li><a href="#">For professionals</a></li>
-        <li><a href="#">Hotel & Restaurant</a></li>
-        <li><a href="#">Arcturus Group</a></li>
-        <li><a href="#">Work with us</a></li>
+        <li><a href="#" aria-label="Scopri il Brand Name">#DiscoverBrandName</a></li>
+        <li><a href="#" aria-label="Cataloghi">Catalogs</a></li>
+        <li><a href="#" aria-label="Per professionisti">For professionals</a></li>
+        <li><a href="#" aria-label="Hotel e ristoranti">Hotel & Restaurant</a></li>
+        <li><a href="#" aria-label="Arcturus Group">Arcturus Group</a></li>
+        <li><a href="#" aria-label="Lavora con noi">Work with us</a></li>
       </ul>
     </div>
 
@@ -744,7 +746,10 @@
 
 </footer>
 
-<script src="/js/event.js" type="text/javascript"></script>
+<script src="js/event.js" type="text/javascript"></script>
+<script src="js/accordion.js" defer type="text/javascript"></script>
+<script src="js/wishlist.js" defer type="text/javascript"></script>
+<script src="js/banner.js"  type="javascript/text"></script>
 
 </body>
 

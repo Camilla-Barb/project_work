@@ -106,7 +106,7 @@ p.display-xl{
 
 
 
-.icon-on-img button.wishlist{
+.icon-on-img button.aggiungi-alla-wishlist{
     top: 6%;
     right: 3%;
     background-color: transparent;
@@ -169,6 +169,8 @@ p.display-xl{
 
 
 
+
+
 /*********************MEDIAQUERIES*******************************************/
 
 /*tablet*/
@@ -226,6 +228,10 @@ p.display-xl {
 .icon-on-img p{
     background-color: transparent;
     border: 0;
+}
+
+.icon-on-img button.aggiungi-alla-wishlist {
+    top: 10%;
 }
 
 /*card prodotti*/

@@ -1,25 +1,35 @@
-const footerHelpButton = document.getElementsByClassName("a.footer-help");
+const infoButtons = document.querySelectorAll(".info button");
 
-const companyButton= document.getElementsByClassName("a.company");
+const list = document.querySelectorAll(".list");
 
-const buttonListHelp=document.getElementsByClassName(".list-help");
-
-const buttonListCompany = document.getElementsByClassName(".list-company");
-
-
-
-footerHelpButton.addEventListener("click", aFooterHelp);
-
-companyButton.addEventListener("click", aCompany);
+infoButtons.forEach(infoButton => {
+    infoButton.addEventListener("click", event => {
+        list.classList.remove("list");
+        list.classList.add("list--active");
+    })
+});
 
 
-function viewListHelp (){
-    buttonListHelp.classList.remove("list-help");
-    buttonListHelp.classList.add("list-help--viewAll");
+
+
+
+/*infoButtons.addEventListener("click", infoButton);
+
+function listActive(){
+    list.classList.remove("list");
+    list.classList.add("list--active");
 }
 
 
-function viewListCompany() {
-    buttonListCompany.classList.remove("list-company");
-    buttonListCompany.classList.add("list-company--viewAll");
-}
+function removeListActive(){
+    list.classList.remove("list--active");
+    list.classList.add("list");
+}*/
+
+
+
+
+
+
+
+

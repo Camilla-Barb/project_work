@@ -57,10 +57,9 @@
 <span class="screen-reader-only">Homepage</span>
 </a>
 </li>
+<li class="home"><a aria-label="homepage" href="index.html">Home</li></a>
 
-<li class="home"><a href="index.html">Home</li></a>
-                    <li><a href="prodotti.html">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+<li><a href="prodotti.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M4 4H9V9H4V4ZM2 2H4H9H11V4V9V11H9H4H2V9V4V2ZM4 15H9V20H4V15ZM2 13H4H9H11V15V20V22H9H4H2V20V15V13ZM20 4H15V9H20V4ZM15 2H13V4V9V11H15H20H22V9V4V2H20H15ZM15 15H20V20H15V15ZM13 13H15H20H22V15V20V22H20H15H13V20V15V13Z"
@@ -69,9 +68,10 @@
                             <span class="screen-reader-only">Listato</span>
                         </a>
                     </li>
-<li class="listato"><a href="prodotti.html">Listato</li></a>
+<li class="listato"><a aria-label="lista prodotti" href="prodotti.html">Listato</li></a>
 </ul>
 </nav>
+
 <div class="logo-container">
 <p class="logo">Brand Logo</p>
 </div>
@@ -87,11 +87,11 @@
 <main>
 <div class="go-back">
     <img src="/assets/icon/freccia_sx_black.svg" alt="torna indietro"/>
-    <a href="index.html">Home</a>
+    <a aria-label="homepage" href="index.html">Home</a>
     <span>/</span>
-    <a href="prodotti.html">Products list</a>
+    <a aria-label="lista dei prodotti" href="prodotti.html">Products list</a>
     <span>/</span>
-    <a href="details.html">Product</a>
+    <a aria-label="dettagli prodotto" href="details.html">Product</a>
 </div>
 
 <div class="product-area"> 
@@ -137,9 +137,9 @@
     <p class="small">€ 240,00</p>
 </div>
 <div class="cart-button">
-<button type="button">Add to cart<img src="assets/icon/carrello_white.svg" alt="aggiungi al carrello"/>
+<button aria-label="aggiungi al carrello" type="button">Add to cart<img src="assets/icon/carrello_white.svg" alt="aggiungi al carrello"/>
 </button>
-<button class="favourite" type="button"><img src="/assets/icon/heart_white.svg" alt="aggiungi ai preferiti"/>
+<button aria-label="aggiungi ai preferiti" class="favourite" type="button"><img src="/assets/icon/heart_white.svg" alt="aggiungi ai preferiti"/>
 </button>
 </div>
 </div>
@@ -149,7 +149,7 @@
 
 <div class="info-products">
 
-    <button type="button">Description<span class="plus">
+    <button aria-label="Description" type="button">Description<span class="plus">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z"
                     fill="black" />
@@ -165,7 +165,7 @@
 
 
 
-    <button type="button">Details<span class="plus">
+    <button aria-label="Details" type="button">Details<span class="plus">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
             </svg> </span>
@@ -178,7 +178,7 @@
     </div>
 
 
-    <button type="button">Tech Specs<span class="plus">
+    <button aria-label="Tech Specs" type="button">Tech Specs<span class="plus">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
             </svg> </span>
@@ -192,7 +192,7 @@
 
 
 
-    <button type="button">Care Information<span class="plus">
+    <button aria-label="Care Information" type="button">Care Information<span class="plus">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z" fill="black" />
             </svg> </span>
@@ -237,8 +237,8 @@
                 <p class="bold-text">Keep you informed about news, trends, and special offers.</p>
                 <form method="post" action="">
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Insert your email and get 5% discount">
-                    <button type="submit">Send
+                    <input aria-label="Inserisci email per mantenerti aggiornato" type="email" name="email" id="email" placeholder="Insert your email and get 5% discount">
+                    <button aria-label="Invia" type="submit">Send
                         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M15.0858 10.0001H0.5V8.00008H15.0858L8.79289 1.70718L10.2071 0.292969L18.9142 9.00008L10.2071 17.7072L8.79289 16.293L15.0858 10.0001Z"
@@ -267,12 +267,12 @@
                     </svg>
                     <span>May we help you?</span>
                     <ul>
-                        <li><a href="#">Find my order</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Product care</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Payment</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#" aria-label="Trova il mio ordine">Find my order</a></li>
+                        <li><a href="#" aria-label="Domande">FAQ</a></li>
+                        <li><a href="#" aria-label="Cura del prodotto">Product care</a></li>
+                        <li><a href="#" aria-label="Spedizione">Shipping</a></li>
+                        <li><a href="#" aria-label="Pagamento">Payment</a></li>
+                        <li><a href="#" aria-label="Contattaci">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="col-2">
@@ -283,12 +283,12 @@
                     </svg>
                     <span>Company</span>
                     <ul>
-                        <li><a href="#">#DiscoverBrandName</a></li>
-                        <li><a href="#">Catalogs</a></li>
-                        <li><a href="#">For professionals</a></li>
-                        <li><a href="#">Hotel & Restaurant</a></li>
-                        <li><a href="#">Arcturus Group</a></li>
-                        <li><a href="#">Work with us</a></li>
+                    <li><a href="#" aria-label="Scopri il Brand Name">#DiscoverBrandName</a></li>
+                    <li><a href="#" aria-label="Cataloghi">Catalogs</a></li>
+                    <li><a href="#" aria-label="Per professionisti">For professionals</a></li>
+                    <li><a href="#" aria-label="Hotel e ristoranti">Hotel & Restaurant</a></li>
+                    <li><a href="#" aria-label="Arcturus Group">Arcturus Group</a></li>
+                    <li><a href="#" aria-label="Lavora con noi">Work with us</a></li>
                     </ul>
                 </div>
             </div>
@@ -297,7 +297,7 @@
         <!--fine componente-->
 
         <div class="info">
-            <a href="#" class="footer-help"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+            <button type="button" aria-label="Come possiamo aiutarti?"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M10 20C11.7246 20 13.387 19.562 14.8595 18.7418L19.0947 19.0947L18.7418 14.8595C19.562 13.387 20 11.7246 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM14.115 16.8621L14.3916 16.6958L16.9053 16.9053L16.6958 14.3916L16.8621 14.115C17.603 12.8824 18 11.4715 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.4715 18 12.8824 17.603 14.115 16.8621ZM10.0003 14.998C10.5528 14.998 11.0007 14.5503 11.0007 13.998C11.0007 13.4458 10.5528 12.998 10.0003 12.998C9.44786 12.998 9 13.4458 9 13.998C9 14.5503 9.44786 14.998 10.0003 14.998ZM9 12H11V11C11 11.0024 11.0047 10.9972 11.0154 10.9854C11.0417 10.9565 11.1039 10.888 11.2205 10.7955C11.3207 10.716 11.3517 10.6954 11.6048 10.535C12.4661 9.98899 13 9.03956 13 8C13 6.34315 11.6569 5 10 5C8.34315 5 7 6.34315 7 8H9C9 7.44772 9.44772 7 10 7C10.5523 7 11 7.44772 11 8C11 8.34732 10.8225 8.66287 10.534 8.84581C10.2102 9.05108 10.1564 9.08671 9.97749 9.22865C9.38274 9.70048 9 10.2627 9 11V12Z"
@@ -308,19 +308,19 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z"
                             fill="black" />
                     </svg> </span>
-            </a>
+                </button>
             <div class="list">
                 <ul>
-                    <li><a href="#">Find my order</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Product care</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Payment</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" aria-label="Trova il mio ordine">Find my order</a></li>
+                    <li><a href="#" aria-label="Domande">FAQ</a></li>
+                    <li><a href="#" aria-label="Cura del prodotto">Product care</a></li>
+                    <li><a href="#" aria-label="Spedizione">Shipping</a></li>
+                    <li><a href="#" aria-label="Pagamento">Payment</a></li>
+                    <li><a href="#" aria-label="Contattaci">Contact us</a></li>
                 </ul>
             </div>
 
-            <a href="#" class="company"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+            <button type="button" aria-label="dettagli sulla compagnia"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22ZM10.998 20C15.9686 20 19.998 15.9706 19.998 11C19.998 6.02944 15.9686 2 10.998 2C6.02748 2 1.99805 6.02944 1.99805 11C1.99805 15.9706 6.02748 20 10.998 20ZM12.176 7.16023H10V5.24023H12.176V7.16023ZM12.176 17.0002H10V8.36023H12.176V17.0002Z"
@@ -331,15 +331,15 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11H22V13H13V22H11V13H2V11H11V2H13V11Z"
                             fill="black" />
                     </svg> </span>
-            </a>
+                </button>
             <div class="list">
                 <ul>
-                    <li><a href="#">#DiscoverBrandName</a></li>
-                    <li><a href="#">Catalogs</a></li>
-                    <li><a href="#">For professionals</a></li>
-                    <li><a href="#">Hotel & Restaurant</a></li>
-                    <li><a href="#">Arcturus Group</a></li>
-                    <li><a href="#">Work with us</a></li>
+                    <li><a href="#" aria-label="Scopri il Brand Name">#DiscoverBrandName</a></li>
+                    <li><a href="#" aria-label="Cataloghi">Catalogs</a></li>
+                    <li><a href="#" aria-label="Per professionisti">For professionals</a></li>
+                    <li><a href="#" aria-label="Hotel e ristoranti">Hotel & Restaurant</a></li>
+                    <li><a href="#" aria-label="Arcturus Group">Arcturus Group</a></li>
+                    <li><a href="#" aria-label="Lavora con noi">Work with us</a></li>
                 </ul>
             </div>
 
@@ -395,7 +395,8 @@
     </footer>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="/js/carousel.js" type="javascript/text"></script>
+<script src="js/carousel.js" type="javascript/text"></script>
+<script src="js/banner.js" type="javascript/text"></script>
 
 </body>
 

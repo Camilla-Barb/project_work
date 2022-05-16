@@ -25,3 +25,6 @@ function sixProductsList() {
     fourProductsListButton.classList.remove("active");
 }
 
+
+
+

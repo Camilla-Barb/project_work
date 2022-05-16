@@ -1,7 +1,6 @@
 {
   "name": "project-site-academy",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass-dev": "sass --watch src/scss:assets/css",
@@ -17,7 +16,9 @@
     "url": "https://github.com/Camilla-Barb/project_work/issues"
   },
   "homepage": "https://github.com/Camilla-Barb/project_work#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.51.0"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
