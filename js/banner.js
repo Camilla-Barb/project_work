@@ -1,11 +1,10 @@
-const closeButton= document.getElementById("close");
-const banner=document.getElementsByClassName("banner");
 
-closeButton.addEventListener("click", closeBtn);
+const btn=document.getElementById("close");
 
-function closeBunnerButton(){
-    banner.classList.remove(".banner");
+btn.addEventListener("click", closeBunner);
+
+function closeBunner() {
+
+document.getElementById("bnr").style.display = "none";
+
 }
-
-
-

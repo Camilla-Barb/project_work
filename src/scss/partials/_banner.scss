@@ -33,6 +33,14 @@
     }
 }
 
+.banner button:hover{
+    transform: scale(1.2);
+}
+
+.bunner--hide{
+    display: none;
+}
+
 .screen-reader-only {
     display: none;
 }
