@@ -1,0 +1,99 @@
+.description {
+    padding: 10px;
+    background-color: $bg-color-gray;
+
+
+    .cart-button {
+        @include flex(0, 0);
+
+
+        button {
+            color: $white;
+            background-color: $black;
+            border: 1px solid $white;
+            padding: 10px 20px;
+            appearance: none;
+            @include flex(center, center);
+            width: 95%;
+            margin-left: 2.2%;
+            margin-bottom: 20px;
+
+                img {
+                    margin-right: 2px;
+                }
+
+            }
+
+
+            img {
+                margin-left: 10px;
+                align-self: auto;
+            }
+        }
+    }
+
+.description .cart-button button.favourite {
+    display: none;
+    padding: 10px 20px;
+    width: 4%;
+}
+
+
+
+.description-product {
+
+    .bold {
+        font-weight: $bold;
+        font-size: $font-size-m;
+        padding: 10px 0;
+    }
+
+    .small {
+        font-size: $font-size-s;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+.price {
+    padding-bottom: 30px;
+    @include flex(flex-start, center);
+
+    .bold {
+        font-weight: $bold;
+        font-size: 2rem;
+    }
+
+    .small {
+        font-size: $font-size-m;
+        padding-left: 10px;
+        text-decoration: line-through;
+    }
+
+
+
+}
+
+@media only screen and (min-width:767px) {
+    .description {
+            background-color: $white;
+            width: 40%;
+            margin-right: 20px;
+        }
+
+
+    .description .cart-button button {
+
+        img {
+            margin-left: auto;
+        }
+
+    }
+
+    .description .cart-button button.favourite {
+        display: block;
+        padding-right: 37px;
+    }
+
+}

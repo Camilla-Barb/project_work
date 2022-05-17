@@ -1,0 +1,32 @@
+.header-menu {
+    box-shadow: 0px 0px 90px rgb(0 0 0 / 20%);
+}
+
+.go-back {
+    display: none;
+}
+
+@media only screen and (min-width:767px) {
+    .go-back {
+            display: block;
+            height: 50px;
+            margin-left: 20px;
+            @include flex(flex-start, center);
+            ;
+            gap: 10px;
+    
+    
+            a {
+                text-decoration: none;
+                color: $black;
+                font-size: $font-size-xs;
+                font-weight: $bold;
+            }
+    
+    
+            span {
+                font-weight: $bold;
+            }
+    
+        }
+}

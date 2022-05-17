@@ -7,8 +7,10 @@
     <title>Project Work</title>
 
 <!--------------------CSS ESTERNI-------------------------->
-<link href="stylesheets/reset.css" rel="stylesheet" type="text/css"/>
-<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+<!--<link href="stylesheets/reset.css" rel="stylesheet" type="text/css"/>-->
+<link href="stylesheets/reset.css" rel="preload" as="style" onload="this.rel='stylesheet'" />
+<!--<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>-->
+<link href="assets/css/style.css" rel="preload" as="style" onload="this.rel='stylesheet'" />
 
 <!--------------------FONT-------------------------->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -326,7 +328,7 @@
 
       <header>
         <h2 id="modal-1-title">
-          Modal Title
+          Newsletter
         </h2>
 
         <!-- [4] -->
@@ -334,7 +336,7 @@
       </header>
 
       <div id="modal-1-content">
-        Modal Content
+        Clicca il bottone per chiudere la modale
       </div>
 
     </div>
@@ -350,13 +352,12 @@
 
 
 
-
-<script src="js/accordion.js" defer type="javascript/text"></script>
-
+<script src="js/banner.js" defer></script>
+<script src="js/accordion.js" defer="defer" async ></script>
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-        
-<script src="js/modal.js" type="javascript/text"></script>
-<script src="js/banner.js" defer type="javascript/text"></script>
+<script defer="defer" async src="js/modal.js" defer ></script>
+
+
 
 </body>
 </html>

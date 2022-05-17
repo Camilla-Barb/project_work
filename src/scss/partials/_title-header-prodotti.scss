@@ -1,0 +1,23 @@
+
+.title {
+    background-color: $white;
+    height: 86px;
+    font-size: 32px;
+    padding-top: 30px;
+
+
+    h1 {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width:767px) {
+
+
+    .title {
+        text-align: center;
+        height: 200px;
+        @include flex(center, center);
+
+    }
+}

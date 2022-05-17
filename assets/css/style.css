@@ -285,7 +285,7 @@ nav li svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .carousel-cell {
@@ -293,7 +293,7 @@ nav li svg {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 40px 2px 10px 2px;
+  padding: 10px 10px 10px 2px;
 }
 .carousel-cell p {
   padding: 10px;
@@ -373,24 +373,23 @@ form button {
   gap: 10px;
   background-color: #F5F5F5;
   border: 0;
+  transition: 0.4s;
 }
 .info button svg {
   margin: 3px 0 0 5px;
 }
 
+.active, .info button:hover {
+  background-color: #9D9D9D;
+}
+
 .list {
   display: none;
   background-color: #F5F5F5;
-}
-.list li {
   font-size: 1.4rem;
   font-weight: 500;
-  height: 30px;
   padding: 10px;
-}
-
-.list--active {
-  display: block;
+  line-height: 20px;
 }
 
 .social p {
@@ -548,6 +547,21 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#modal-1-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+header button {
+  color: #000;
+  padding: 10px 50px;
+}
+
+#modal-1-content {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

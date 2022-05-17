@@ -1,0 +1,124 @@
+
+.card-prodotti {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2px;
+    background-color: $bg-color-gray;
+}
+
+
+.card {
+    margin-bottom: 40px;
+
+
+    .img-covercard {
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            height: max-content;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+    }
+}
+
+
+.icon-on-img {
+    p {
+        position: absolute;
+        font-weight: $bold;
+        text-transform: uppercase;
+        z-index: 2;
+        color: $black;
+        background-color: $no-bg-color;
+        border: 0;
+        background-color: $white;
+        padding: 2px;
+
+        &.new {
+            top: 6%;
+            left: 2%;
+        }
+
+        &.quantity {
+            bottom: 6%;
+            left: 2%;
+        }
+    }
+
+    button {
+        position: absolute;
+        font-weight: $bold;
+        text-transform: uppercase;
+        z-index: 2;
+        color: $black;
+        background-color: $no-bg-color;
+        border: 0
+    }
+
+
+
+}
+
+
+button.aggiungi-alla-wishlist {
+    top: 6%;
+    right: 3%;
+    background-color: $no-bg-color;
+    border: 0;
+}
+
+
+
+@media only screen and (min-width:767px) {
+
+
+
+    .icon-on-img p {
+        background-color: $no-bg-color;
+        border: 0;
+
+        button.aggiungi-alla-wishlist {
+            top: 10%;
+        }
+    }
+
+
+
+    /*card prodotti*/
+
+    .card-prodotti {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        background-color: $bg-color-gray;
+
+        &--gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:1023px) {
+
+    .card .img-covercard {
+        height: 200px;
+    }
+
+}
+
+
+@media only screen and (min-width:1439px) {
+
+    .card .img-covercard {
+        height: 400px;
+    }
+}

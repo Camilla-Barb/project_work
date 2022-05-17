@@ -1,31 +1,18 @@
-const infoButtons = document.querySelectorAll(".info button");
 
-const list = document.querySelectorAll(".list");
+let acc = document.querySelectorAll(".info button");
+let i;
 
-infoButtons.forEach(infoButton => {
-    infoButton.addEventListener("click", event => {
-        list.classList.remove("list");
-        list.classList.add("list--active");
-    })
-});
-
-
-
-
-
-/*infoButtons.addEventListener("click", infoButton);
-
-function listActive(){
-    list.classList.remove("list");
-    list.classList.add("list--active");
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let list = this.nextElementSibling;
+        if (list.style.display === "block") {
+            list.style.display = "none";
+        } else {
+            list.style.display = "block";
+        }
+    });
 }
-
-
-function removeListActive(){
-    list.classList.remove("list--active");
-    list.classList.add("list");
-}*/
-
 
 
 

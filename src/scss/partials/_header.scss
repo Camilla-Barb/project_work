@@ -3,6 +3,7 @@
     height: 100px;
     background-color: $white;
     @include flex(space-between, center);
+    
 }
 
 .logo-container {
@@ -18,3 +19,4 @@
     }
 
 }
+

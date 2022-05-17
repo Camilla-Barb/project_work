@@ -1,0 +1,77 @@
+.product-description {
+    @include flex(0, flex-start);
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: $font-size-s;
+    color: $black;
+
+    h2 {
+        font-weight: $bold;
+    }
+
+    p {
+        padding-top: 10px;
+    }
+}
+
+
+.card {
+
+    a {
+        font-size: $font-size-s;
+        color: $black;
+    }
+
+    .buy {
+        @include flex(0, center);
+        gap: 10px;
+        background-color: $white;
+        text-align: left;
+        height: 40px;
+        border: 0px;
+        margin: 50px 5px 0 5px;
+        color: $black;
+
+
+        p.bold {
+            font-size: $font-size-s;
+            font-weight: $bold;
+        }
+
+        p.small {
+            font-size: 1.1rem;
+            text-decoration: line-through;
+        }
+
+
+        button {
+            background-color: $no-bg-color;
+            border: 0;
+            margin-left: auto;
+            margin-right: 3%;
+        }
+
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (min-width:767px) {
+
+    /*button carrello*/
+
+    .card .buy {
+        background-color: $no-bg-color;
+
+        button {
+            @include invisible;
+        }
+    }
+
+
+}

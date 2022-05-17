@@ -23,3 +23,8 @@
     justify-content: $x;
     align-items: $y;
 }
+
+@mixin invisible{
+    display: none;
+}
+

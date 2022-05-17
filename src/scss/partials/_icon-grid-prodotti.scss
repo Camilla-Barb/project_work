@@ -1,0 +1,87 @@
+/*********ICONE VISUALIZZAZIONE GRIGLIE*************/
+.view-grid {
+    height: 70px;
+    background-color: $bg-color-gray;
+
+    p {
+        font-size: $font-size-s;
+        height: 70px;
+        padding-top: 30px;
+        margin-left: 15px;
+        font-weight: $bold;
+        color: $strong-gray;
+    }
+
+    .product-result p.display-xl {
+        @include invisible;
+    }
+}
+
+
+
+
+/*icone attive*/
+
+.grid-icon button {
+    @include invisible;
+
+    &.active {
+        opacity: 0.5;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+}
+
+@media only screen and (min-width:767px) {
+
+
+
+    .grid-icon {
+        @include flex(0, 0);
+
+        button {
+            display: block;
+            border: 0;
+            background-color: $no-bg-color;
+            margin-left: 10px;
+
+        }
+    }
+
+
+    .view-grid {
+        @include flex(center, center);
+        gap: 75%;
+
+    }
+
+    p.only-mobile-text {
+        @include invisible;
+    }
+
+    p.display-xl {
+        display: block;
+    }
+}
+
+
+
+
+@media only screen and (min-width:1023px) {
+
+    .view-grid {
+        gap: 80%;
+    }
+}
+
+
+
+@media only screen and (min-width:1439px) {
+
+    .view-grid {
+        gap: 85%;
+    }
+}

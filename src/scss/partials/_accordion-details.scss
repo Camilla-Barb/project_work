@@ -1,0 +1,49 @@
+.info-products {
+    padding-top: 20px;
+
+    button {
+        @include flex(0, center);
+        border: 0;
+        height: 48px;
+        font-weight: $bold;
+        font-size: $font-size-m;
+        background-color: $bg-color-gray;
+        width: 100%;
+        transition: 0.4s;
+    
+    }
+
+    span {
+        margin-left: auto;
+    }
+
+
+    .text {
+        display: none;
+        font-size: 16px;
+        line-height: 2.4rem;
+        padding: 20px;
+        letter-spacing: 0.01em;
+    }
+
+}
+
+.active, .info-products button:hover {
+    background-color: $gray;
+}
+
+@media only screen and (min-width:767px) {
+    .info-products {
+        width: 45%;
+        @include flex(0, center);
+        flex-direction: column;
+        margin-left: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:1023px) {
+    .info-products{
+        width: 90%;
+    }
+}
