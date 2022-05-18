@@ -560,7 +560,9 @@ form button {
 
 header button {
   color: #000;
-  padding: 10px 50px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 #modal-1-content {
